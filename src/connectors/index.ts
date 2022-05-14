@@ -43,7 +43,7 @@ export const fortmatic = new FortmaticConnector({
 
 export const walletlink = new WalletLinkConnector({
   url: INFURA_NETWORK_URLS[SupportedChainId.MAINNET],
-  appName: 'Uniswap',
-  appLogoUrl: DoGHNUTSWAP_LOGO_URL,
+  appName: 'Doughnutswap',
+  appLogoUrl: DOGHNUTSWAP_LOGO_URL,
   supportedChainIds: ALL_SUPPORTED_CHAIN_IDS,
 })
