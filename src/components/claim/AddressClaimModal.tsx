@@ -119,7 +119,7 @@ export default function AddressClaimModal({ isOpen, onDismiss }: { isOpen: boole
           <AutoColumn gap="md" style={{ padding: '1rem', paddingTop: '0' }} justify="center">
             <ThemedText.SubHeader fontWeight={500}>
               <Trans>
-                Enter an address to trigger a DOUGH claim. If the address has any claimable DOUGH it will be sent to them on submission.
+                Enter an address to trigger a DOUGH claim. If the address has any claimable DOUGH it⏎ will be sent to them on submission.
               </Trans>
             </ThemedText.SubHeader>
             <AddressInputPanel value={typed} onChange={handleRecipientType} />
