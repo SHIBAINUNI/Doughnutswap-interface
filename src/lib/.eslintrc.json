@@ -20,6 +20,16 @@
           {
             "group": ["styled-components"],
             "message": "Please import styled from lib/theme to get the correct typings."
+       module.exports = {
+ //... other settings
+         rules: {
+     //... other rules
+    // use 'off' instead of "warn" to disable the rule and the error message
+             'prettier/prettier': [   'warn',   {
+                 endOfLine: 'auto',
+      },
+    ],
+  },
           }
         ]
       }
