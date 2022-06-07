@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html translate="no">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Doughnutswap Interface</title>
+    <meta name="description" content="Swap or provide liquidity on the Uniswap Protocol" />
+
+    <!--
+      %PUBLIC_URL% will be replaced with the URL of the `public` folder during build.
+      Only files inside the `public` folder can be referenced from the HTML.
+    -->
+    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/images/192x192_App_Icon.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/images/512x512_App_Icon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#ff007a" />
+    <meta name="fortmatic-site-verification" content="j93LgcVZk79qcgyo" />
+
+    <!--
+      manifest.json provides metadata used when the app is installed as a PWA.
+      See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preconnect" href="https://www.google-analytics.com/">
+
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            box-sizing: border-box;
+        }
+
+        /**
+          Explicitly load Inter var from public/ so it does not block LCP's critical path.
+        */
+        @font-face {
+            font-family: 'Inter custom';
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: block;
+            font-named-instance: 'Regular';
+            src: url(%PUBLIC_URL%/fonts/Inter-roman.var.woff2) format("woff2 supports variations(gvar)"),
+                url(%PUBLIC_URL%/fonts/Inter-roman.var.woff2) format("woff2-variations"),
+                url(%PUBLIC_URL%/fonts/Inter-roman.var.woff2) format("woff2");
+        }
+
+        @supports (font-variation-settings: normal) {
+            * {
+                font-family: 'Inter custom', sans-serif;
+            }
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            user-select: none;
+        }
+
+        html {
+            font-size: 16px;
+            font-variant: none;
+            font-smooth: always;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
+        }
+
+        #background-radial-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+            width: 200vw;
+            height: 200vh;
+            background: radial-gradient(50% 50% at 50% 50%, #fc077d10 0%, rgba(255, 255, 255, 0) 100%);
+            transform: translate(-50vw, -100vh);
+            z-index: -1;
+        }
+
+        html {
+            min-height: 100%;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            html {
+                background-color: #212429;
+            }
+        }
+        @media (prefers-color-scheme: light) {
+            html {
+                background-color: #F7F8FA;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- The root is the container of the app -->
+    <div id="root">
+      <!-- Triggers the font to load immediately and then is replaced by the app -->
+      <div>&emsp;</div>
+    </div>
+
+    <div id="background-radial-gradient"></div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+
+<!doctype html><html translate="no"><head><meta charset="utf-8"/><title>Uniswap Interface</title><meta name="description" content="Swap or provide liquidity on the Uniswap Protocol"/><link rel="shortcut icon" type="image/png" href="./favicon.png"/><link rel="apple-touch-icon" sizes="192x192" href="./images/192x192_App_Icon.png"/><link rel="apple-touch-icon" sizes="512x512" href="./images/512x512_App_Icon.png"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/><meta name="theme-color" content="#ff007a"/><meta name="fortmatic-site-verification" content="j93LgcVZk79qcgyo"/><link rel="manifest" href="./manifest.json"/><link rel="preconnect" href="https://www.google-analytics.com/"><link rel="preload" href="./fonts/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin><style>*{font-family:Inter,sans-serif;box-sizing:border-box}@font-face{font-family:'Inter custom';font-weight:100 900;font-style:normal;font-display:block;font-named-instance:Regular;src:url(fonts/Inter-roman.var.woff2) format("woff2 supports variations(gvar)"),url(fonts/Inter-roman.var.woff2) format("woff2-variations"),url(fonts/Inter-roman.var.woff2) format("woff2")}@supports (font-variation-settings:normal){*{font-family:'Inter custom',sans-serif}}body,html{margin:0;padding:0}button{user-select:none}html{font-size:16px;font-variant:none;font-smooth:always;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent;font-feature-settings:'ss01' on,'ss02' on,'cv01' on,'cv03' on}#background-radial-gradient{position:fixed;top:0;left:0;right:0;pointer-events:none;width:200vw;height:200vh;background:radial-gradient(50% 50% at 50% 50%,#fc077d10 0,rgba(255,255,255,0) 100%);transform:translate(-50vw,-100vh);z-index:-1}html{min-height:100%}@media (prefers-color-scheme:dark){html{background-color:#212429}}@media (prefers-color-scheme:light){html{background-color:#f7f8fa}}</style><link href="./static/css/3.83e03661.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div>&emsp;</div></div><div id="background-radial-gradient"></div><script>!function(e){function t(t){for(var n,c,f=t[0],u=t[1],i=t[2],d=0,l=[];d<f.length;d++)c=f[d],Object.prototype.hasOwnProperty.call(o,c)&&o[c]&&l.push(o[c][0]),o[c]=0;for(n in u)Object.prototype.hasOwnProperty.call(u,n)&&(e[n]=u[n]);for(b&&b(t);l.length;)l.shift()();return a.push.apply(a,i||[]),r()}function r(){for(var e,t=0;t<a.length;t++){for(var r=a[t],n=!0,f=1;f<r.length;f++){var u=r[f];0!==o[u]&&(n=!1)}n&&(a.splice(t--,1),e=c(c.s=r[0]))}return e}var n={},o={2:0},a=[];function c(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,c),r.l=!0,r.exports}c.e=function(e){var t=[],r=o[e];if(0!==r)if(r)t.push(r[2]);else{var n=new Promise((function(t,n){r=o[e]=[t,n]}));t.push(r[2]=n);var a,f=document.createElement("script");f.charset="utf-8",f.timeout=120,c.nc&&f.setAttribute("nonce",c.nc),f.src=function(e){return c.p+"static/js/"+({}[e]||e)+"."+{0:"036c2a2b",4:"249654a7",5:"4ba482db",6:"3f524fc4",7:"5d9c97c1",8:"7c39763f",9:"367754eb",10:"fed8fc3c",11:"ab8e9809",12:"ff1bc9eb",13:"8243299b",14:"10472113",15:"49575857",16:"54d18b69",17:"05796af8",18:"80a14b65",19:"17d90bec",20:"485eeebd",21:"8cf6feb2",22:"f7a6a7f0",23:"615b8dff",24:"1cf43bb9",25:"d07c7064",26:"91f3ede7",27:"3bdbddd1",28:"6cbeb3b5",29:"b704103e",30:"2f9797a8",31:"12d4b0b9",32:"8ed0a2be",33:"71ffb627",34:"90672bfc",35:"0b1045f1",36:"6ab7b98b",37:"133b7bcb",38:"e7e4b1dc",39:"84b670dd",40:"e3f14a55",41:"384cb1f9",42:"6db67c2e",43:"9f5bc1d9",44:"b4d8a49c"}[e]+".chunk.js"}(e);var u=new Error;a=function(t){f.onerror=f.onload=null,clearTimeout(i);var r=o[e];if(0!==r){if(r){var n=t&&("load"===t.type?"missing":t.type),a=t&&t.target&&t.target.src;u.message="Loading chunk "+e+" failed.\n("+n+": "+a+")",u.name="ChunkLoadError",u.type=n,u.request=a,r[1](u)}o[e]=void 0}};var i=setTimeout((function(){a({type:"timeout",target:f})}),12e4);f.onerror=f.onload=a,document.head.appendChild(f)}return Promise.all(t)},c.m=e,c.c=n,c.d=function(e,t,r){c.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},c.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},c.t=function(e,t){if(1&t&&(e=c(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(c.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)c.d(r,n,function(t){return e[t]}.bind(null,n));return r},c.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return c.d(t,"a",t),t},c.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},c.p="./",c.oe=function(e){throw console.error(e),e};var f=this["webpackJsonp@uniswap/widgets"]=this["webpackJsonp@uniswap/widgets"]||[],u=f.push.bind(f);f.push=t,f=f.slice();for(var i=0;i<f.length;i++)t(f[i]);var b=u;r()}([])</script><script src="./static/js/3.96b31173.chunk.js"></script><script src="./static/js/main.03dc2340.chunk.js"></script></body></html>
